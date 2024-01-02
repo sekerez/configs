@@ -1,0 +1,34 @@
+lastupdatecheck: 0
+recentrepos:
+- /Users/isakjones/.config/configs
+- /Users/isakjones/.config/alacritty
+- /Users/isakjones/.config/nvim/lua/user
+- /Users/isakjones/.config/nvim
+- /Users/isakjones/january/debtsy
+- /Users/isakjones/code/advent_of_code2023/day20
+- /Users/isakjones/code/advent_of_code2023/day8
+- /Users/isakjones/code/advent_of_code2023/day2
+- /Users/isakjones/code/advent_of_code2023/day5
+- /Users/isakjones/code/advent_of_code2023/day1
+- /Users/isakjones/code/advent_of_code2023/day4
+- /Users/isakjones/code/advent_of_code2023/day3
+- /Users/isakjones/code/small/hashlife
+- /Users/isakjones/code/small/rust-tic-tac-toe-solver
+- /Users/isakjones/code/roc/roc
+- /Users/isakjones/Library/Application Support/lazygit
+- /Users/isakjones/january/ideas
+- /Users/isakjones/january/new_tps
+- /Users/isakjones/code/open_source/cpython
+- /Users/isakjones/code/csprimer/systems/c/dynamic-array
+- /Users/isakjones/code/advent_of_code2022/day16
+- /Users/isakjones/code/other/editR
+- /Users/isakjones/code/open_source/neovim
+- /Users/isakjones/january/math/linear_algebra_done_right
+startuppopupversion: 5
+customcommandshistory:
+- q
+- q:q
+- clean -df
+- git clean -df
+hidecommandlog: false
+ignorewhitespaceindiffview: false
