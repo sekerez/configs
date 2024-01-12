@@ -18,7 +18,6 @@ $haskell\
 $python\
 $docker_context\
 $aws\
-$localip\
 $time\
 [ ](fg:color_green)\
 $line_break$character"""
@@ -69,11 +68,11 @@ style_user = "bg:color_green fg:color_black"
 style_root = "bg:color_green fg:color_black"
 format = '[ $user ]($style)'
 
-[localip]
-disabled = false
-ssh_only = false
-style = "bg:color_green fg:color_black"
-format = '[ $localipv4 ]($style)'
+# [localip]
+# disabled = false
+# ssh_only = false
+# style = "bg:color_green fg:color_black"
+# format = '[ $localipv4 ]($style)'
 
 [directory]
 style = "fg:color_black bg:color_green"
