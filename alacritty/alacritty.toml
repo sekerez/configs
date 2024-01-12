@@ -1,0 +1,92 @@
+# [colors.bright]
+# black = "#666666"
+# blue = "#7aa6da"
+# cyan = "#70c0b1"
+# green = "#98c379"
+# magenta = "#c397d8"
+# # orange = "#ff9640"
+# red = "#d54e53"
+# white = "#eaeaea"
+# yellow = "#e7c547"
+
+[colors.cursor]
+cursor = "#ffffff"
+
+[colors.normal]
+black = "#1d1f21"
+blue = "#61afef"
+cyan = "#61afef"
+green = "#98c379"
+magenta = "#b294bb"
+# orange = "#ff9640"
+red = "#dd6666"
+white = "#c5c8c6"
+yellow = "#f0c674"
+
+[colors.primary]
+background = "#010101"
+foreground = "#ffffff"
+
+[colors.vi_mode_cursor]
+cursor = "#c90000"
+text = "#ffffff"
+
+[cursor]
+# blinking = "On"
+style = "Block"
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "NotoMono Nerd Font Mono"
+
+[[keyboard.bindings]]
+action = "CreateNewWindow"
+key = "N"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ToggleFullScreen"
+key = "F"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Down"
+key = "N"
+mode = "Vi"
+
+[[keyboard.bindings]]
+action = "Up"
+key = "E"
+mode = "Vi"
+
+[[keyboard.bindings]]
+action = "Left"
+key = "M"
+mode = "Vi"
+
+[[keyboard.bindings]]
+action = "Right"
+key = "I"
+mode = "Vi"
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[window]
+decorations = "none"
+dynamic_title = true
+startup_mode = "Fullscreen"
+
+[window.dimensions]
+columns = 150
+lines = 38
+
+[window.padding]
+x = 10
+y = 10
+
+[shell]
+program = "/opt/homebrew/bin/fish"
