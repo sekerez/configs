@@ -1,17 +1,12 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](color_white)\
+[](color_green)\
 $os\
 $username\
-[](bg:color_red fg:color_white)\
-$localip\
-[](bg:color_orange fg:color_red)\
 $directory\
-[](fg:color_orange bg:color_yellow)\
 $git_branch\
 $git_status\
-[](fg:color_yellow bg:color_aqua)\
 $c\
 $rust\
 $golang\
@@ -21,11 +16,9 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:color_aqua bg:color_blue)\
 $docker_context\
-[](fg:color_blue bg:color_purple)\
 $aws\
-[](fg:color_purple bg:color_green)\
+$localip\
 $time\
 [ ](fg:color_green)\
 $line_break$character"""
@@ -39,7 +32,7 @@ color_bg1 = '#888888'
 color_bg3 = '#665c54'
 color_blue = '#2196F3'
 color_aqua = '#00FFFF'
-color_green = '#39FF14'
+color_green = '#39DD14'
 color_orange = '#FFA500'
 color_purple = '#963DFF'
 color_red = '#FF0000'
@@ -47,7 +40,7 @@ color_yellow = '#FFFF55'
 
 [os]
 disabled = false
-style = "bg:color_white fg:color_black"
+style = "bg:color_green fg:color_black"
 
 [os.symbols]
 Windows = "󰍲"
@@ -72,19 +65,19 @@ RedHatEnterprise = "󱄛"
 
 [username]
 show_always = true
-style_user = "bg:color_white fg:color_black"
-style_root = "bg:color_white fg:color_black"
+style_user = "bg:color_green fg:color_black"
+style_root = "bg:color_green fg:color_black"
 format = '[ $user ]($style)'
 
 [localip]
 disabled = false
 ssh_only = false
-style = "bg:color_red fg:color_black"
-format = '[ $localipv4 ]($style)'
+style = "bg:color_green fg:color_black"
+format = '[ $localipv4 ]($style)'
 
 [directory]
-style = "fg:color_black bg:color_orange"
-format = "[ $path ]($style)"
+style = "fg:color_black bg:color_green"
+format = "[ $path ]($style)"
 # truncation_length = 7
 # truncation_symbol = "…/"
 
@@ -98,72 +91,72 @@ format = "[ $path ]($style)"
 [git_branch]
 symbol = ""
 style = "bg:color_yellow"
-format = '[[ $symbol $branch ](fg:color_black bg:color_yellow)]($style)'
+format = '[[ $symbol $branch ](fg:color_black bg:color_green)]($style)'
 
 [git_status]
-style = "bg:color_yellow"
-format = '[[($all_status$ahead_behind )](fg:color_black bg:color_yellow)]($style)'
+style = "bg:color_green"
+format = '[[($all_status$ahead_behind )](fg:color_black bg:color_green)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:color_aqua"
-format = '[[ $symbol( $version) ](fg:color_black bg:color_aqua)]($style)'
+style = "bg:color_green"
+format = '[[ $symbol( $version) ](fg:color_black bg:color_green)]($style)'
 
 [c]
 symbol = " "
-style = "bg:color_aqua"
-format = '[[ $symbol( $version) ](fg:color_black bg:color_aqua)]($style)'
+style = "bg:color_green"
+format = '[[ $symbol( $version) ](fg:color_black bg:color_green)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:color_aqua"
-format = '[[ $symbol( $version) ](fg:color_black bg:color_aqua)]($style)'
+style = "bg:color_green"
+format = '[[ $symbol( $version) ](fg:color_black bg:color_green)]($style)'
 
 [golang]
 symbol = ""
-style = "bg:color_aqua"
-format = '[[ $symbol( $version) ](fg:color_black bg:color_aqua)]($style)'
+style = "bg:color_green"
+format = '[[ $symbol( $version) ](fg:color_black bg:color_green)]($style)'
 
 [php]
 symbol = ""
-style = "bg:color_aqua"
-format = '[[ $symbol( $version) ](fg:color_black bg:color_aqua)]($style)'
+style = "bg:color_green"
+format = '[[ $symbol( $version) ](fg:color_black bg:color_green)]($style)'
 
 [java]
 symbol = " "
-style = "bg:color_aqua"
-format = '[[ $symbol( $version) ](fg:color_black bg:color_aqua)]($style)'
+style = "bg:color_green"
+format = '[[ $symbol( $version) ](fg:color_black bg:color_green)]($style)'
 
 [kotlin]
 symbol = ""
-style = "bg:color_aqua"
-format = '[[ $symbol( $version) ](fg:color_black bg:color_aqua)]($style)'
+style = "bg:color_green"
+format = '[[ $symbol( $version) ](fg:color_black bg:color_green)]($style)'
 
 [haskell]
 symbol = ""
-style = "bg:color_aqua"
-format = '[[ $symbol( $version) ](fg:color_black bg:color_aqua)]($style)'
+style = "bg:color_green"
+format = '[[ $symbol( $version) ](fg:color_black bg:color_green)]($style)'
 
 [python]
 symbol = ""
-style = "bg:color_aqua"
-format = '[[ $symbol( $version) ](fg:color_black bg:color_aqua)]($style)'
+style = "bg:color_green"
+format = '[[ $symbol( $version) ](fg:color_black bg:color_green)]($style)'
 
 [docker_context]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $context) ](fg:color_white bg:color_blue)]($style)'
+style = "bg:color_green"
+format = '[[ $symbol( $context) ](fg:color_white bg:color_green)]($style)'
 
 [aws]
 symbol = ""
-style = "fg:color_black bg:color_purple"
-format = '[ $symbol $profile $region (\[$duration\] )]($style)'
+style = "fg:color_black bg:color_green"
+format = '[ $symbol $profile $region (\[$duration\] )]($style)'
 
 [time]
 disabled = false
-time_format = "%R"
+time_format = "%H:%M:%S%.3f"
 style = "bg:color_green"
-format = '[[  $time ](fg:color_black bg:color_green)]($style)'
+format = '[[  $time ](fg:color_black bg:color_green)]($style)'
 
 [line_break]
 disabled = false
