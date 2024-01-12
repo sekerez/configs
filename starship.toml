@@ -21,7 +21,9 @@ $haskell\
 $python\
 [](fg:color_aqua bg:color_blue)\
 $docker_context\
-[](fg:color_blue bg:color_green)\
+[](fg:color_blue bg:color_purple)\
+$aws\
+[](fg:color_purple bg:color_green)\
 $time\
 [ ](fg:color_green)\
 $line_break$character"""
@@ -143,6 +145,11 @@ format = '[[ $symbol( $version) ](fg:color_black bg:color_aqua)]($style)'
 symbol = ""
 style = "bg:color_blue"
 format = '[[ $symbol( $context) ](fg:color_white bg:color_blue)]($style)'
+
+[aws]
+symbol = ""
+style = "fg:color_black bg:color_purple"
+format = '[ $symbol $profile $region (\[$duration\] )]($style)'
 
 [time]
 disabled = false
