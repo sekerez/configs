@@ -13,22 +13,20 @@
 cursor = "#ffffff"
 
 [colors.normal]
-black = "#1d1f21"
-blue = "#61afef"
-cyan = "#61afef"
-green = "#98c379"
-magenta = "#b294bb"
-# orange = "#ff9640"
-red = "#dd6666"
-white = "#c5c8c6"
-yellow = "#f0c674"
+black = '#000000'
+white = '#FFFFFF'
+blue = '#2196F3'
+cyan = '#00FFFF'
+green = '#39DD14'
+red = '#FF0000'
+yellow = '#FFFF55'
 
 [colors.primary]
-background = "#010101"
+background = "#000000"
 foreground = "#ffffff"
 
 [colors.vi_mode_cursor]
-cursor = "#c90000"
+cursor =  '#FF0000'
 text = "#ffffff"
 
 [cursor]
@@ -41,10 +39,10 @@ size = 16.0
 [font.normal]
 family = "NotoMono Nerd Font Mono"
 
-[[keyboard.bindings]]
-action = "CreateNewWindow"
-key = "N"
-mods = "Control"
+# [[keyboard.bindings]]
+# action = "CreateNewWindow"
+# key = "N"
+# mods = "Control"
 
 [[keyboard.bindings]]
 action = "ToggleFullScreen"

@@ -5,8 +5,6 @@ format = """
 $os\
 $username\
 $directory\
-$git_branch\
-$git_status\
 $c\
 $rust\
 $golang\
@@ -20,7 +18,11 @@ $docker_context\
 $aws\
 $time\
 [ ](fg:color_green)\
-$line_break$character"""
+$line_break\
+$git_branch\
+$git_status\
+$line_break\
+$character"""
 
 palette = 'gruvbox_dark'
 
@@ -90,11 +92,11 @@ format = "[ $path ]($style)"
 [git_branch]
 symbol = ""
 style = "bg:color_yellow"
-format = '[[ $symbol $branch ](fg:color_black bg:color_green)]($style)'
+format = '[[ $symbol $branch ](fg:color_yellow )]($style)'
 
 [git_status]
 style = "bg:color_green"
-format = '[[($all_status$ahead_behind )](fg:color_black bg:color_green)]($style)'
+format = '[[($all_status$ahead_behind )](fg:color_yellow)]($style)'
 
 [nodejs]
 symbol = ""
@@ -144,12 +146,12 @@ format = '[[ $symbol( $version) ](fg:color_black bg:color_green)]($style)'
 [docker_context]
 symbol = ""
 style = "bg:color_green"
-format = '[[ $symbol( $context) ](fg:color_white bg:color_green)]($style)'
+format = '[[ $symbol( $context) ](fg:color_black bg:color_green)]($style)'
 
 [aws]
 symbol = ""
 style = "fg:color_black bg:color_green"
-format = '[ $symbol $profile $region (\[$duration\] )]($style)'
+format = '[ $symbol $profile (\[$duration\] )]($style)'
 
 [time]
 disabled = false
