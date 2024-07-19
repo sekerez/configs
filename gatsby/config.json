@@ -4,6 +4,8 @@
 		"enabled": true
 	},
 	"feedback": {
-		"firstCheckDate": 1704926647318
+		"firstCheckDate": 1704926647318,
+		"sevenDayFeedbackDate": 1706825125443,
+		"lastRequestDate": 1716501955516
 	}
 }
