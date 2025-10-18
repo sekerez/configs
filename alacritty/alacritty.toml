@@ -1,14 +1,3 @@
-# [colors.bright]
-# black = "#666666"
-# blue = "#7aa6da"
-# cyan = "#70c0b1"
-# green = "#98c379"
-# magenta = "#c397d8"
-# # orange = "#ff9640"
-# red = "#d54e53"
-# white = "#eaeaea"
-# yellow = "#e7c547"
-
 [colors.cursor]
 cursor = "#ffffff"
 
@@ -26,7 +15,7 @@ background = "#000000"
 foreground = "#ffffff"
 
 [colors.vi_mode_cursor]
-cursor =  '#FF0000'
+cursor = '#FF0000'
 text = "#ffffff"
 
 [cursor]
@@ -86,5 +75,5 @@ lines = 38
 x = 10
 y = 10
 
-[shell]
+[terminal.shell]
 program = "/opt/homebrew/bin/fish"

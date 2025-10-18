@@ -1,0 +1,6 @@
+# ~/.config/jesseduffield/lazygit/config.yml
+os:
+  editPreset: 'nvim'
+  edit: 'nvim --server /tmp/nvim-server.pipe --remote-tab "/{{filename}}"'
+  open: 'nvim --server /tmp/nvim-server.pipe --remote-tab "/{{filename}}"'
+  editInTerminal: true
