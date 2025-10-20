@@ -1,13 +1,13 @@
 # Font Configuration
-font-family = NotoMono Nerd Font Mono
+font-family = "Berkeley Mono Regular"
 font-size = 14
+# font-thicken = true
 
 # Colors
 background = 000000
 foreground = ffffff
 cursor-color = ffffff
 
-# Palette (Normal colors)
 palette = 0=#000000
 palette = 1=#FF0000
 palette = 2=#39DD14
@@ -17,7 +17,6 @@ palette = 5=#FF00FF
 palette = 6=#00FFFF
 palette = 7=#FFFFFF
 
-# Palette (Bright colors - using same as normal since not specified in alacritty)
 palette = 8=#7F7F7F
 palette = 9=#FF0000
 palette = 10=#39DD14
