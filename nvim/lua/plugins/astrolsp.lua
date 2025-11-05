@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroLSP allows you to customize the features in AstroNvim's LSP configuration engine
 -- Configuration documentation can be found with `:h astrolsp`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -39,16 +37,54 @@ return {
       -- end
     },
     -- enable servers that you already have installed without mason
-    servers = {
-      -- "pyright"
-    },
+    servers = { "bacon_ls" },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      bacon_ls = {
+        init_options = {
+          updateOnSave = true,
+          updateOnSaveWaitMillis = 1000,
+        },
+      },
+      rust_analyzer = {
+        capabilities = {
+          general = { positionEncodings = { "utf-16" } },
+        },
+        settings = {
+          ["rust-analyzer"] = {
+            cargo = {
+              buildScripts = {
+                enable = true,
+              },
+            },
+            checkOnSave = false,
+            diagnostics = {
+              enable = false,
+            },
+            procMacro = {
+              enable = true,
+            },
+            files = {
+              excludeDirs = {
+                ".direnv",
+                ".git",
+                "target",
+              },
+            },
+            check = {
+              command = "clippy",
+              extraArgs = {
+                "--no-deps",
+              },
+            },
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
+      rust_analyzer = false,
       -- a function without a key is simply the default handler, functions take two parameters, the server name and the configured options table for that server
       -- function(server, opts) require("lspconfig")[server].setup(opts) end
 

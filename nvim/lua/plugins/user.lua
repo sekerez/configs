@@ -56,23 +56,6 @@ return {
       { "<leader>lTF", "<cmd>TSToolsFileReferences<CR>", desc = "Find File References" },
     },
   },
-  {
-    "mrcjkb/rustaceanvim",
-    dependencies = "nvim-dap",
-    version = "^5", -- Recommended
-    lazy = false, -- This plugin is already lazy
-    opts = {
-      server = {
-        default_settings = {
-          ["rust_analyzer"] = {},
-        },
-      },
-    },
-    keys = {
-      { "<leader>dt", function() vim.cmd.RustLsp "debug" end, desc = "Test Nearest" },
-      { "<leader>dl", function() vim.cmd.RustLsp { "debuggables", bang = true } end, desc = "Test Last" },
-    },
-  },
   -- == Examples of Overriding Plugins ==
 
   -- You can disable default plugins as follows:
